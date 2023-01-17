@@ -1,0 +1,14 @@
+# Number of observations
+n <- 100
+
+# Generate random data for level 1
+level1 <- rbinom(n, 1, 0.5)
+
+# Generate random data for level 2
+level2 <- rbinom(n, 1, 0.5)
+
+# Generate random data for level 3
+level3 <- rbinom(n, 1, 0.5)
+
+# Combine the data into a dataframe
+df <- data.frame(level1, level2, level3)
